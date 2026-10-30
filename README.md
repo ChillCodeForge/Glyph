@@ -2,7 +2,9 @@
 
 Glyph is a desktop Markdown editor for Windows by ChillCode. You write in a single live view: a heading grows as you type `#`, `**bold**` turns bold, and the Markdown syntax steps back once the cursor leaves the element. There is no separate preview pane to keep an eye on, yet the file on disk stays plain Markdown, and Glyph writes it back exactly as it found it unless you changed something.
 
-![Glyph with the folder sidebar and a document in the live view](images/live-light.png)
+![Glyph with the folder sidebar and a document in the live view, dark theme](images/live-dark.png)
+
+![The same view in the light theme](images/live-light.png)
 
 ## Why Glyph
 
