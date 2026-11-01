@@ -19,7 +19,17 @@ Glyph is a desktop Markdown editor for Windows by ChillCode. You write in a sing
 
 ## Download
 
-Get the latest installer from the **[Releases page](https://github.com/ChillCodeForge/Glyph/releases/latest)**. Download `Glyph_<version>_x64-setup.exe` and run it; it installs per user and needs no admin rights. Each release lists what changed and the SHA-256 checksum of the installer in `SHA256SUMS.txt`. The installer is not code-signed, so Windows SmartScreen may warn on first run.
+Get the latest installer from the **[Releases page](https://github.com/ChillCodeForge/Glyph/releases/latest)**. Download `Glyph_<version>_x64-setup.exe` and run it; it installs per user and needs no admin rights. Each release lists what changed and the SHA-256 checksum of the installer in `SHA256SUMS.txt`. The installer is not code-signed; see below.
+
+### Why Windows or your antivirus warns
+
+The installer is not code-signed: a certificate costs money every year, and Glyph is free and earns none. Windows SmartScreen and some antivirus programs therefore warn about each new version until it has built up reputation; Trend Micro, for example, has blocked the installer as potential ransomware. To check that your download is genuine, compare its checksum with `SHA256SUMS.txt` of the same release:
+
+```powershell
+Get-FileHash .\Glyph_<version>_x64-setup.exe
+```
+
+If the value matches (ignoring upper/lower case), the file is the published build; allow it in your antivirus program. Automatic updates replace the files in the install folder `%LOCALAPPDATA%\Glyph`; allowing that folder as well should keep them from being blocked.
 
 ## Source code
 
