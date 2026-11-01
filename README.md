@@ -29,7 +29,7 @@ The installer is not code-signed: a certificate costs money every year, and Glyp
 Get-FileHash .\Glyph_<version>_x64-setup.exe
 ```
 
-If the value matches, the file is the published build; allow it in your antivirus program. Automatic updates replace the files in the install folder `%LOCALAPPDATA%\Glyph`; allowing that folder as well keeps them from being blocked.
+If the value matches (ignoring upper/lower case), the file is the published build; allow it in your antivirus program. Automatic updates replace the files in the install folder `%LOCALAPPDATA%\Glyph`; allowing that folder as well should keep them from being blocked.
 
 ## Source code
 
